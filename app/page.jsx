@@ -4,9 +4,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-12'>
       <Button variant="gold">Subscribe</Button>
-      <Badge variant="gold">Gold Badge</Badge>
     </div>
   )
 }
