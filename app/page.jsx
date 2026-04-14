@@ -23,10 +23,10 @@ const page = () => {
           </p>
           <div className=" relative flex justify-center gap-2 sm:gap-4 mt-10 sm:w-auto">
              <Link href='/onboarding'>
-               <Button variant="gold">Get Started</Button>
+               <Button variant="gold" size="hero">Get Started</Button>
              </Link>
              <Link href='/explore'>
-               <Button variant="outline">Learn More → </Button>
+               <Button variant="outline" size="hero">Learn More → </Button>
              </Link>
           </div>
         </div>
