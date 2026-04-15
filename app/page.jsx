@@ -3,6 +3,8 @@ import { StarsBackgroundDemo } from "@/components/demo-components-backgrounds-st
 import { GoldTitle, GrayTitle, Sectionlabel } from "@/components/reusePara";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { AVATARS } from "@/lib/data";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -29,6 +31,37 @@ const page = () => {
                <Button variant="outline" size="hero">Learn More → </Button>
              </Link>
           </div>
+
+          <div className="relative flex items-center justify-center gap-3 sm:gap-4 mt-8  sm:mt-16">
+            <div className="flex">
+               {AVATARS.map((av, i) => (
+                <div
+                  key={i}
+                  className={`w-8 h-8 rounded-full border-2 border-[#0a0a0b] overflow-hidden ${
+                    i > 0 ? "-ml-2" : ""
+                  }`}
+                >
+                  <Image
+                    src={av.src}
+                    alt="user avatar"
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+
+            </div>
+             <p className="text-sm text-stone-500 text-center sm:text-left">
+              <strong className="text-stone-400 font-medium">
+                2,400+ engineers
+              </strong>{" "}
+              cracked FAANG interviews via Prezo
+            </p>
+
+          </div>
+          
+          
         </div>
       </section>
     </div>
