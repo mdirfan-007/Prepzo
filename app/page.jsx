@@ -1,4 +1,5 @@
 import { StarsBackground } from "@/components/animate-ui/components/backgrounds/stars";
+import { CodeDemo } from "@/components/demo-components-animate-code";
 import { StarsBackgroundDemo } from "@/components/demo-components-backgrounds-stars";
 import { GoldTitle, GrayTitle, Sectionlabel } from "@/components/reusePara";
 import { Badge } from "@/components/ui/badge";
@@ -16,9 +17,9 @@ const page = () => {
         <div className="col-span-full lg:col-span-3 flex flex-col items-center justify-center text-center lg:-rotate-2">
           <Badge variant="gold">Powered by AI - Now in Beta</Badge>
           <h1 className="font-serif relative text-5xl sm:text-6xl lg:text-7xl tracking-tighter max-w-4xl">
-            <GrayTitle>Crack the toughest interviews</GrayTitle>
+            <GrayTitle>Master interviews with interactive AI practice</GrayTitle>
             <br />
-            <GoldTitle>with AI-powered mock interviews</GoldTitle>
+            <GoldTitle>with real experts</GoldTitle>
           </h1>
           <p className="relative text-sm sm:text-base md:text-lg text-stone-400 max-w-xl mt-6 leading-relaxed">
             Bool 1:1 mock interviews with an AI interviewer that simulates real interview scenarios, providing instant feedback and personalized coaching to help you ace your next job interview.
@@ -32,7 +33,7 @@ const page = () => {
              </Link>
           </div>
 
-          <div className="relative flex items-center justify-center gap-3 sm:gap-4 mt-8  sm:mt-16">
+          <div className="relative flex items-center justify-center gap-3 sm:gap-4 mt-8  lg:mt-6">
             <div className="flex">
                {AVATARS.map((av, i) => (
                 <div
@@ -56,12 +57,15 @@ const page = () => {
               <strong className="text-stone-400 font-medium">
                 2,400+ engineers
               </strong>{" "}
-              cracked FAANG interviews via Prezo
+              cracked FAANG interviews via Prepzo
             </p>
 
           </div>
           
           
+        </div>
+        <div  className="col-span-full lg:col-span-2 flex items-center justify-center lg:justify-start mt-12 lg:mt-0 lg:rotate-3">
+       <CodeDemo duration={30000} writing/>
         </div>
       </section>
     </div>
