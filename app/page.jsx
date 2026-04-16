@@ -73,18 +73,17 @@ const page = () => {
         </div>
       </section>
       <section className="relative z-10 border-y border-white/10 py-14">
-        <p className="text-center text-xs font-medium text-stone-600 tracking-widest uppercase mb-8">Interviwees landed roles at</p>
+        <p className="text-center text-xs font-medium text-stone-600 tracking-widest uppercase mb-8">
+          Interviwees landed roles at
+        </p>
         <div className="flex flex-wrap items-center justify-center gap-24 px-6">
-      {LOGOS.map((l,id)=>(
-        <Image
-          key={id}
-          src={l.src}
-          alt={l.alt}
-          width={100}
-          height={100}
-        />
-      ))}
+          {LOGOS.map((l, id) => (
+            <Image key={id} src={l.src} alt={l.alt} width={100} height={100} />
+          ))}
         </div>
+      </section>
+      <section className="relative z-10 py-28 max-w-5xl mx-auto px-6">
+        helllo
       </section>
     </div>
   );
