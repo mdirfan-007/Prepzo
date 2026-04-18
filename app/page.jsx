@@ -1,10 +1,17 @@
 import { StarsBackground } from "@/components/animate-ui/components/backgrounds/stars";
+import BentoCard from "@/components/BentoCard";
 import { CodeDemo } from "@/components/demo-components-animate-code";
 import { StarsBackgroundDemo } from "@/components/demo-components-backgrounds-stars";
-import { GoldTitle, GrayTitle, Sectionlabel } from "@/components/reusePara";
+import {
+  GoldTitle,
+  GrayTitle,
+  SectionHeading,
+  Sectionlabel,
+} from "@/components/reusePara";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { AVATARS, LOGOS } from "@/lib/data";
+import { AI_TAGS, AVATARS, LOGOS } from "@/lib/data";
+import { Bot } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -83,7 +90,30 @@ const page = () => {
         </div>
       </section>
       <section className="relative z-10 py-28 max-w-5xl mx-auto px-6">
-        helllo
+        <div className=" text-center mb-16">
+          <Sectionlabel>Features</Sectionlabel>
+          <SectionHeading
+            gray="Everything you need,"
+            gold="nothing you don't"
+          />
+        </div>
+        <div className="grid grid-cols-12 gap-4">
+          <div className="col-span-12 md:col-span-7">
+            <BentoCard
+              icon={<Bot size={20} className="text-amber-400" />}
+              title={<GrayTitle>AI Interviews Generator</GrayTitle>}
+              desc="Our AI Interview Generator creates realistic mock interview scenarios tailored to your target role, providing you with a personalized and effective way to practice and prepare for your upcoming interviews."
+            >
+              <div className="flex flex-wrap gap-2 mt-5">
+               {AI_TAGS.map((t)=>(
+                <Badge key={t} variant="outline" className="text-xs">
+                  {t.label}
+                </Badge>
+               ))}
+              </div>
+            </BentoCard>
+          </div>
+        </div>
       </section>
     </div>
   );
