@@ -11,6 +11,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { AI_TAGS, AVATARS, LOGOS, ROLES, SLOTS } from "@/lib/data";
+import { PricingTable } from "@clerk/nextjs";
 import { Bot, Wallet } from "lucide-react";
 import { div } from "motion/react-client";
 import Image from "next/image";
@@ -228,6 +229,20 @@ const page = () => {
             </div>
           ))}
         </div>
+      </section>
+        <section className="relative z-10 pb-28 max-w-5xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <Sectionlabel>Pricing</Sectionlabel>
+          <SectionHeading
+            gray="Simple, transparent"
+            gold="credit-based plans"
+          />
+          <p className="text-stone-400 mt-3 text-sm">
+            Each credit = one session. Unused credits roll over.
+          </p>
+        </div>
+
+        <PricingTable/>
       </section>
     </div>
   );
