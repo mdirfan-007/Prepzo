@@ -10,8 +10,9 @@ import {
 } from "@/components/reusePara";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { AI_TAGS, AVATARS, LOGOS, SLOTS } from "@/lib/data";
+import { AI_TAGS, AVATARS, LOGOS, ROLES, SLOTS } from "@/lib/data";
 import { Bot, Wallet } from "lucide-react";
+import { div } from "motion/react-client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -105,16 +106,19 @@ const page = () => {
               desc="Our AI Interview Generator creates realistic mock interview scenarios tailored to your target role, providing you with a personalized and effective way to practice and prepare for your upcoming interviews."
             >
               <div className="flex flex-wrap gap-2 mt-5">
-               {AI_TAGS.map((t)=>(
-                <Badge key={t.label} variant={t.active ? "gold" : "outline"} size="sm">
-                  {t.label}
-                </Badge>
-               ))}
+                {AI_TAGS.map((t) => (
+                  <Badge
+                    key={t.label}
+                    variant={t.active ? "gold" : "outline"}
+                    size="sm"
+                  >
+                    {t.label}
+                  </Badge>
+                ))}
               </div>
             </BentoCard>
-            
           </div>
-           <div className="col-span-12 md:col-span-5">
+          <div className="col-span-12 md:col-span-5">
             <BentoCard
               icon={<Wallet size={16} className="text-amber-400" />}
               title={<GrayTitle>Credit System</GrayTitle>}
@@ -140,9 +144,7 @@ const page = () => {
               icon="📹"
               title="HD Video Calls"
               desc="Powered by Stream. Screen sharing, recording, and instant playback links — all built in."
-            >
-              
-            </BentoCard>
+            ></BentoCard>
           </div>
 
           <div className="col-span-12 md:col-span-4">
@@ -165,11 +167,9 @@ const page = () => {
               icon="📊"
               title={<GrayTitle>AI Feedback Reports</GrayTitle>}
               desc="Post-interview analysis by Gemini with actionable insights."
-            >
-              
-            </BentoCard>
+            ></BentoCard>
           </div>
-           <div className="col-span-12 md:col-span-6">
+          <div className="col-span-12 md:col-span-6">
             <BentoCard
               icon="🗓️"
               title={<GoldTitle>Slot-based Scheduling</GoldTitle>}
@@ -187,6 +187,46 @@ const page = () => {
               </div>
             </BentoCard>
           </div>
+        </div>
+      </section>
+      <section className="relative z-10 pb-28 max-w-5xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <Sectionlabel>Who it&apos;s for</Sectionlabel>
+          <SectionHeading gray="Built for both sides" gold="of the table" />
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {ROLES.map((role) => (
+            <div
+              key={role.label}
+              className="relative bg-[#0f0f11] border border-white/10 hover:border-amber-400/20 rounded-2xl p-12 h-full transition duration-300 overflow-hidden"
+            >
+              <div className="absolute bottom-0 right-0 w-48 h-48 rounded-full bg-[radial-gradient(circle,rgba(251,191,36,0.05)_0%,transparent_70%)] pointer-events-none" />
+
+              <span className="inline-block text-xs font-semibold text-amber-400 tracking-widest uppercase border border-amber-400/20 bg-amber-400/10 rounded-full px-3 py-1.5 mb-5">
+                {role.label}
+              </span>
+
+              <h3 className="font-serif text-2xl tracking-tight mb-4">
+                {role.title}
+              </h3>
+
+              <p className="text-sm text-stone-400 leading-relaxed mb-8">
+                {role.desc}
+              </p>
+
+              <ul className="space-y-3">
+                {role.perks.map((p) => (
+                  <li key={p} className="flex gap-3 text-sm text-stone-400">
+                    <span className="mt-0.5 min-w-4 h-4 rounded-full bg-amber-400/10 border border-amber-400/20 flex items-center justify-center text-xs text-amber-400">
+                      ✓
+                    </span>
+                    {p}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
     </div>
