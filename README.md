@@ -39,3 +39,109 @@ Today I learned how to integrate authentication using Clerk.
 <Show when="signed-in">
   <UserButton />
 </Show>
+
+#  Prepzo – AI Interview Marketplace (UI)
+
+Prepzo is a modern **AI-powered interview marketplace UI** where users can explore, practice, and prepare for interviews with an interactive and clean user experience.
+
+This project focuses on building a **high-quality frontend UI** using modern tools and best practices.
+
+---
+
+## ✨ Features
+
+* 🎯 Clean and modern UI design
+* 🔐 Authentication UI powered by Clerk
+* ⚡ Smooth animations using Animate UI
+* 🎨 Beautiful components with shadcn/ui
+* 📱 Fully responsive (mobile, tablet, desktop)
+* 🧩 Modular and reusable components
+
+---
+
+## 🛠️ Tech Stack
+
+* React / Next.js
+* Tailwind CSS
+* shadcn/ui
+* Animate UI
+* Clerk (Authentication)
+
+---
+
+
+## 📂 Project Structure
+
+```
+/components
+/ui
+/pages or /app
+/public
+/styles
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/prepzo.git
+
+# Go to project folder
+cd prepzo
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
+
+---
+
+## 🔐 Authentication
+
+This project uses **Clerk** for authentication (UI integration only).
+
+---
+
+## 🚧 Current Status
+
+* ✅ UI Completed
+* 🚧 Backend & AI features (planned)
+
+---
+
+## 🎯 Future Plans
+
+* 🤖 AI mock interview system
+* 📊 Performance analytics dashboard
+* 💬 Real-time interview sessions
+* 🌐 Marketplace for interviewers
+
+---
+
+## 🙌 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a PR.
+
+---
+
+## 📬 Contact
+
+* LinkedIn: [www.linkedin.com/in/md-irfan-2492061b9](http://www.linkedin.com/in/md-irfan-2492061b9)
+* Email: [mdimrfat007@gmail.com](mailto:mdimrfat007@gmail.com)
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
+
+## 🧑‍💻 Author
+
+**Md Irfan**
+Full Stack Developer | Open to Work
