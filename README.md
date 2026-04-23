@@ -1,121 +1,56 @@
-#  Prepzo – Learning Log
+# Prepzo – AI Interview Marketplace
 
-This repository tracks my daily progress while building **Prepzo (AI Interview Marketplace)**.
+An AI-powered platform where candidates can practice and prepare for interviews with a clean, modern experience.
 
----
-
-## 📅 Day Update (Authentication + Styling)
-
-### 🔐 Authentication with Clerk
-
-Today I learned how to integrate authentication using Clerk.
-
-#### ✅ Key Concepts:
-- Setup Clerk in Next.js App Router
-- Wrap app with `ClerkProvider`
-- Use prebuilt components:
-  - `SignInButton`
-  - `SignUpButton`
-  - `UserButton`
-- Conditional rendering using:
-  - Signed-in users
-  - Signed-out users
-
-#### 🧠 What I Understood:
-- Clerk handles authentication UI and backend
-- No need to build auth from scratch
-- Easy user session management
+> 🚧 UI complete · Backend & AI features in progress
 
 ---
 
-### 👤 User Management
+## Tech Stack
 
-- Display user profile using `UserButton`
-- Handle authentication state
-- Protect UI based on login status
-
-#### Example:
-```jsx
-<Show when="signed-in">
-  <UserButton />
-</Show>
-
-#  Prepzo – AI Interview Marketplace (UI)
-
-Prepzo is a modern **AI-powered interview marketplace UI** where users can explore, practice, and prepare for interviews with an interactive and clean user experience.
-
-This project focuses on building a **high-quality frontend UI** using modern tools and best practices.
+- **Next.js 16** + React 19
+- **Tailwind CSS v4**
+- **shadcn/ui** + Animate UI
+- **Clerk** – Authentication
+- **Prisma** + PostgreSQL – Database (upcoming)
+- **Arcjet** – Security middleware
 
 ---
 
-## ✨ Features
+## Features
 
-* 🎯 Clean and modern UI design
-* 🔐 Authentication UI powered by Clerk
-* ⚡ Smooth animations using Animate UI
-* 🎨 Beautiful components with shadcn/ui
-* 📱 Fully responsive (mobile, tablet, desktop)
-* 🧩 Modular and reusable components
+- 🔐 Auth with Clerk (Sign In / Sign Up / User Profile)
+- 📱 Fully responsive across all screen sizes
+- ✨ Smooth animations with Animate UI
+- 🧩 Modular, reusable component structure
 
 ---
 
-## 🛠️ Tech Stack
+## Getting Started
 
-* React / Next.js
-* Tailwind CSS
-* shadcn/ui
-* Animate UI
-* Clerk (Authentication)
+```bash
+# Install dependencies
+npm install
 
----
+# Set up environment variables
+cp .env.example .env.local
 
-
-
-
-
-
-## 🔐 Authentication
-
-This project uses **Clerk** for authentication (UI integration only).
+# Run the dev server
+npm run dev
+```
 
 ---
 
-## 🚧 Current Status
+## Roadmap
 
-* ✅ UI Completed
-* 🚧 Backend & AI features (planned)
-
----
-
-## 🎯 Future Plans
-
-* 🤖 AI mock interview system
-* 📊 Performance analytics dashboard
-* 💬 Real-time interview sessions
-* 🌐 Marketplace for interviewers
+- [ ] AI mock interview engine
+- [ ] Performance analytics dashboard
+- [ ] Real-time interview sessions
+- [ ] Interviewer marketplace
 
 ---
 
-## 🙌 Contributing
+## Author
 
-Contributions are welcome! Feel free to fork the repo and submit a PR.
-
----
-
-## 📬 Contact
-
-* LinkedIn: [www.linkedin.com/in/md-irfan-2492061b9](http://www.linkedin.com/in/md-irfan-2492061b9)
-* Email: [mdimrfat007@gmail.com](mailto:mdimrfat007@gmail.com)
-
----
-
-## ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub!
-
----
-
-## 🧑‍💻 Author
-
-**Md Irfan**
-Full Stack Developer | Open to Work
+**Md Irfan** – Full Stack Developer  
+[LinkedIn](http://www.linkedin.com/in/md-irfan-2492061b9) · [mdimrfat007@gmail.com](mailto:mdimrfat007@gmail.com)
