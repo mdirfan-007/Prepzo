@@ -70,35 +70,9 @@ This project focuses on building a **high-quality frontend UI** using modern too
 ---
 
 
-## 📂 Project Structure
 
-```
-/components
-/ui
-/pages or /app
-/public
-/styles
-```
 
----
 
-## ⚙️ Installation & Setup
-
-```bash
-# Clone the repo
-git clone https://github.com/your-username/prepzo.git
-
-# Go to project folder
-cd prepzo
-
-# Install dependencies
-npm install
-
-# Run the development server
-npm run dev
-```
-
----
 
 ## 🔐 Authentication
 
